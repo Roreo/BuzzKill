@@ -19,6 +19,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
 
+        AlarmWrapper buzzwrap = new AlarmWrapper(context);
 
         // Vibrate the mobile phone
         Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
@@ -28,6 +29,8 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
         vibrator.vibrate(pattern, -1);
 
         Log.d("OUTPUT TIME", calendar.getTime().toString());
+
+        buzzwrap.buzzOn(context);
 
 
 

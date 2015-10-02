@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Buzz Kill</string>
+    <string name="hello_round">I will buzz every 5 minutes!</string>
+    <string name="hello_square">Hello Square World!</string>
+</resources>

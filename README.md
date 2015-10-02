@@ -18,7 +18,10 @@ This app is very light on the battery not even needing a screen wake to vibrate.
 Unfortunately there is no solid way to set exact repeating alarms on API 19+. So I will have to implement a work around. A wrapper class is going to be needed to bind the main activity with the service and loop the two.
 
 <h2>It's working!</h2>
-I just made a new wrapper class to handle the setting of alarms and it's working! Right on time every 5 minutes. See below:
+I just made a new wrapper class to handle the setting of alarms and it's working! Right on time every 5 minutes. 
+
+See below:
+
 <img src="http://i.imgur.com/vkuvmCY.png" />
 
 It was a little tricky to get started, trying to figure out why it was going off every <strong>5 seconds</strong> instead of 5 minutes...
